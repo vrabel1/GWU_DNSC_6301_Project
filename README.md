@@ -6,7 +6,7 @@
 * **Model date**: August, 2021
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: [DNSC 6301 Project.ipynb](DNSC 6301 Project.ipynb)
+* **Model implementation code**: [DNSC 6301 Project](https://github.com/vrabel1/GWU_DNSC_6301_Project/blob/main/DNSC%206301%20Project.ipynb)
 
 ### Intended Use
 * **Primary intended uses**: This model is a probability of default classifier, with a use case for determining eligibility for a credit line increase.
@@ -44,7 +44,7 @@
 
 ### Model Details
 * **Columns used as inputs in the final model**: 
-* **Column(s) used as target(s) in the final model**: DELINQ_NEXT
+* **Column(s) used as target(s) in the final model**:) DELINQ_NEXT
 * **Type of model**:Decision Tree
 * **Software used to implement the model**: Python
 * **Version of the modeling software**: 
