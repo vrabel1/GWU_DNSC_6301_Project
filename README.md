@@ -2,16 +2,16 @@
 
 ### Basic Information
 
-* **Person or organization developing model**: Victoria Abel
+* **Group member names and emails**: Victoria Abel, vrabel@gwu.edu
 * **Model date**: August, 2021
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: [DNSC_6301_Example_Project.ipynb](DNSC_6301_Example_Project.ipynb)
+* **Model implementation code**: [DNSC_6301_Project.ipynb](DNSC_6301_Project.ipynb)
 
 ### Intended Use
-* **Primary intended uses**: This model is an *example* probability of default classifier, with an *example* use case for determining eligibility for a credit line increase.
-* **Primary intended users**: Students in GWU DNSC 6301 bootcamp.
-* **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
+* **Primary intended uses**: This model is a probability of default classifier, with a use case for determining eligibility for a credit line increase.
+* **Primary intended users**: Professor Hall
+* **Out-of-scope use cases**: Any use beyond an project submission is out-of-scope.
 
 ### Training Data
 
@@ -41,3 +41,30 @@
 * **Source of test data**: GWU Blackboard, email `jphall@gwu.edu` for more information
 * **Number of rows in test data**: 7,500
 * **State any differences in columns between training and test data**: None
+
+### Model Details
+* **Columns used as inputs in the final model**: 
+* **Column(s) used as target(s) in the final model**: DELINQ_NEXT
+* **Type of model**:Decision Tree
+* **Software used to implement the model**: Python
+* **Version of the modeling software**: 
+* **Hyperparameters or other settings of your model**:
+
+### Quantitative Analysis
+* **Metrics used to evaluate your final model**: Training AUC, Validation AUC
+* **State the final values of the metrics for all data: training, validation, and test data**: 
+* **Provide any plots related to your data or final model -- be sure to label the plots!**: 
+
+### Ethical consideration
+* **Describe potential negative impacts of using your model**:
+  * Who:
+  * What:
+  * When:
+  * How:
+* **Describe potential uncertainties relating to the impacts of using your model**:
+  * Who:
+  * What:
+  * When:
+  * How:
+* **Describe any unexpected or results**:
+
