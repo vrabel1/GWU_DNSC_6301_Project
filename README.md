@@ -43,7 +43,7 @@
 * **State any differences in columns between training and test data**: None
 
 ### Model Details
-* **Columns used as inputs in the final model**: 
+* **Columns used as inputs in the final model**: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 * **Column(s) used as target(s) in the final model**: DELINQ_NEXT
 * **Type of model**:Decision Tree
 * **Software used to implement the model**: Python
@@ -51,20 +51,24 @@
 * **Hyperparameters or other settings of your model**:
 
 ### Quantitative Analysis
-* **Metrics used to evaluate your final model**: Training AUC, Validation AUC
+* **Metrics used to evaluate your final model**: Training AUC, Validation AUC, Test AUC, and AIR
 * **State the final values of the metrics for all data: training, validation, and test data**: 
+    * Training AUC: 0.78
+    * Validation AUC: 0.75
+    * Test AUC: 0.74
+    * Asian-to-White AIR: 1.00
+    * Black-to-White AIR: 0.85
+    * Female-to-Male AIR: 1.02
+    * Hispanic-to-White AIR: 0.83
 * **Provide any plots related to your data or final model -- be sure to label the plots!**: 
+![image](https://user-images.githubusercontent.com/89735988/131259488-6a6efde6-3435-4ff1-bd52-2861fa467c09.png)
+![image](https://user-images.githubusercontent.com/89735988/131259520-45a8e6b6-dbbb-4c03-b998-94c892f155bb.png)
+
 
 ### Ethical consideration
 * **Describe potential negative impacts of using your model**:
-  * Who:
-  * What:
-  * When:
-  * How:
+  One potential negative impact of using this model is the extremely high importance for Pay_0. The high importance means a large amount of the decisions from the model are based on Pay_0. If there was an economic recession or another disaster that limits individuals funds, a large portion of the population would be predicted as delinquent on their next payment. This also ignores earlier payment history for individuals. Someone with excellent previous payment history that for any number of reasons couldn't pay their bill in the most recent month would be heavily penalized regardless of previous history.
 * **Describe potential uncertainties relating to the impacts of using your model**:
-  * Who:
-  * What:
-  * When:
-  * How:
+  One uncertainty of this model would be its intended use. This model was only designed to predict delinquency on the next payment for applications of a credit line increase, therefore attemtpting to use it for another reason would be out of the scope for this model. A bank may try to use this for other uses such as: credit card applications and loan applications. It's uncertain how the model would perform on these tasks and could produce incorrect predicitions that could deny qualified individiuals or accept unqalified individiuals. This would be harmful both for the banks and the individuals applying to them.
 * **Describe any unexpected or results**:
-
+  The final model results were of interest as they 
