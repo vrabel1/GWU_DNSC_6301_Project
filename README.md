@@ -44,7 +44,7 @@
 
 ### Model Details
 * **Columns used as inputs in the final model**: 
-* **Column(s) used as target(s) in the final model**:) DELINQ_NEXT
+* **Column(s) used as target(s) in the final model**: DELINQ_NEXT
 * **Type of model**:Decision Tree
 * **Software used to implement the model**: Python
 * **Version of the modeling software**: 
