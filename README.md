@@ -11,7 +11,7 @@
 ### Intended Use
 * **Primary intended uses**: This model is a probability of default classifier, with a use case for determining eligibility for a credit line increase.
 * **Primary intended users**: Professor Hall
-* **Out-of-scope use cases**: Any use beyond an project submission is out-of-scope.
+* **Out-of-scope use cases**: Any use beyond a project submission is out-of-scope.
 
 ### Training Data
 
@@ -45,10 +45,10 @@
 ### Model Details
 * **Columns used as inputs in the final model**: 'LIMIT_BAL', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 * **Column(s) used as target(s) in the final model**: DELINQ_NEXT
-* **Type of model**:Decision Tree
-* **Software used to implement the model**: Python
-* **Version of the modeling software**: 
-* **Hyperparameters or other settings of your model**:
+* **Type of model**: Decision Tree
+* **Software used to implement the model**: Scikit-learn
+* **Version of the modeling software**: 0.23.1
+* **Hyperparameters or other settings of your model**: max_depth=6, random_state=12345
 
 ### Quantitative Analysis
 * **Metrics used to evaluate your final model**: Training AUC, Validation AUC, Test AUC, and AIR
@@ -71,4 +71,4 @@
 * **Describe potential uncertainties relating to the impacts of using your model**:
   One uncertainty of this model would be its intended use. This model was only designed to predict delinquency on the next payment for applications of a credit line increase, therefore attemtpting to use it for another reason would be out of the scope for this model. A bank may try to use this for other uses such as: credit card applications and loan applications. It's uncertain how the model would perform on these tasks and could produce incorrect predicitions that could deny qualified individiuals or accept unqalified individiuals. This would be harmful both for the banks and the individuals applying to them.
 * **Describe any unexpected or results**:
-  The final model results were of interest as they 
+  The final model results were of interest as they confirmed the initial tree depth. After including the adjusted cutoff of .18 and looking at the Hispanic-to-White AIR. This showed that the tree depth of 6 had a relatively high AIR of .83 shwoing a lack of bias for a protected group that previously showed bias from the model.
